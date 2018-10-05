@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="HowToPlayPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: linear-gradient(to bottom, #3c182f, #e0b374)" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject1.HowToPlayPageController">
+   <children>
+      <Pane layoutX="23.0" layoutY="21.0" prefHeight="359.0" prefWidth="555.0">
+         <children>
+            <Label layoutX="210.0" layoutY="17.0" prefHeight="34.0" prefWidth="138.0" text="How to Play" textAlignment="CENTER" textFill="#dad0d0" underline="true">
+               <font>
+                  <Font name="Book Antiqua Bold" size="23.0" />
+               </font>
+            </Label>
+            <Label layoutX="15.0" layoutY="68.0" prefHeight="229.0" prefWidth="528.0" text="                             Welcome to Simon Says!&#10;•&#9;The rules are the same in each mode. &#10;•&#9;The pattern is shown to you by highlighted objects.&#10;•&#9;After the pattern completes, you repeat the pattern back.&#10;•&#9;The next level starts after you reach 1000 points&#10;•&#9;Continue repeating the patterns back as long as you can.&#10;&#10;                               See how far you can go!&#10;" textFill="#dad0d0">
+               <font>
+                  <Font name="Book Antiqua Bold" size="19.0" />
+               </font>
+            </Label>
+            <Button layoutX="228.0" layoutY="303.0" mnemonicParsing="false" onAction="#GoBackHome" prefHeight="34.0" prefWidth="100.0" text="Home" textFill="#6b6565">
+               <font>
+                  <Font name="Book Antiqua Bold" size="15.0" />
+               </font>
+            </Button>
+         </children>
+      </Pane>
+   </children>
+</AnchorPane>

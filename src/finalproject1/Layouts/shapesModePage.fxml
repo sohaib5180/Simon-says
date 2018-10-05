@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="VBoxShapeMode" alignment="CENTER" prefHeight="520.0" prefWidth="660.0" spacing="10" style="-fx-background-color: linear-gradient(to bottom, #3c182f, #e0b374);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject1.ShapesModePageController">
+   <children>
+      <VBox fx:id="vbScoreLevel" prefHeight="53.0" prefWidth="83.0" style="-fx-padding: 10;">
+         <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="528.0">
+               <children>
+                  <Label fx:id="scoreLb" prefHeight="30.0" prefWidth="51.0" text="Score:" textFill="#110e0e">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="scoreLb1" prefHeight="31.0" prefWidth="245.0" text="0" textFill="#e0b374">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="0.0" prefWidth="119.0">
+               <children>
+                  <Label fx:id="levelLb" prefHeight="22.0" prefWidth="53.0" text="Level: " textFill="#0a0a0a">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="scoreLb2" prefHeight="22.0" prefWidth="244.0" text="1" textFill="#e0b374">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+     <HBox alignment="CENTER" prefHeight="189.0" prefWidth="502.0" spacing="20.0">
+         <children>
+            <Button fx:id="ButtonTriangle" mnemonicParsing="false" onAction="#OnActionTriangle" prefHeight="200.0" prefWidth="280.0" style="-fx-background-color: green;" />
+            <Button fx:id="ButtonRectangle" mnemonicParsing="false" onAction="#OnActionRectangle" prefHeight="200.0" prefWidth="280.0" style="-fx-background-color: red;" />
+         </children></HBox>
+     <HBox alignment="CENTER" fillHeight="false" prefHeight="185.0" prefWidth="502.0" spacing="20.0">
+         <children>
+            <Button fx:id="ButtonTrapezoid" mnemonicParsing="false" onAction="#OnActionTrapezoid" prefHeight="200.0" prefWidth="280.0" style="-fx-background-color: blue;" />
+            <Button fx:id="ButtonHexagon" mnemonicParsing="false" onAction="#OnActionHexagon" prefHeight="200.0" prefWidth="280.0" style="-fx-background-color: yellow;" />
+         </children></HBox>
+       
+       
+   </children>
+</VBox>

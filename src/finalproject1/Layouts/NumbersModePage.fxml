@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="anchorPanenumbermode" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="520.0" prefWidth="660.0" style="-fx-background-color: linear-gradient(to bottom, #3c182f, #e0b374)" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject1.NumbersModePageController"> 
+    <children>
+        <VBox fx:id="vbScoreLevel" layoutX="469.0" layoutY="15.0" prefHeight="53.0" prefWidth="513.0" style="-fx-padding: 10;">
+            <children>
+            <HBox alignment="CENTER_LEFT" prefHeight="31.0" prefWidth="528.0">
+               <children>
+                      <Label fx:id="scoreLb" prefHeight="31.0" prefWidth="53.0" text="Score:" textFill="#110e0e">
+                          <font>
+                              <Font name="Agency FB Bold" size="18.0" />
+                          </font>
+                      </Label>
+                  <Label fx:id="scoreLb1" prefHeight="31.0" prefWidth="245.0" text="0" textFill="#e0b374">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" prefHeight="22.0" prefWidth="590.0">
+               <children>
+                      <Label fx:id="levelLb" prefHeight="22.0" prefWidth="53.0" text="Level: " textFill="#0a0a0a">
+                          <font>
+                              <Font name="Agency FB Bold" size="18.0" />
+                          </font>
+                      </Label>
+                  <Label fx:id="scoreLb2" prefHeight="22.0" prefWidth="244.0" text="1" textFill="#e0b374">
+                     <font>
+                        <Font name="Agency FB Bold" size="18.0" />
+                     </font>
+                  </Label>
+               </children>
+            </HBox>
+            </children>
+        </VBox>
+      <HBox prefHeight="100.0" prefWidth="200.0" />
+        <HBox fx:id="hbOneToFive" alignment="CENTER" layoutX="110.0" layoutY="100.0" prefHeight="100.0" prefWidth="355.0" spacing="25.0">
+            <children>
+                <Button fx:id="One" mnemonicParsing="false" onAction="#OnActionOne" prefHeight="80.0" prefWidth="61.0" style="-fx-background-color: black;" text="1" textAlignment="CENTER" textFill="#eb7019">
+                    <font>
+                        <Font name="Agency FB Bold" size="32.0" />
+                    </font>
+                </Button>
+                <Button fx:id="Two" mnemonicParsing="false" onAction="#OnActionTwo" prefHeight="103.0" prefWidth="52.0" style="-fx-background-color: black;" text="2" textFill="#eb7019">
+                    <font>
+                        <Font name="Agency FB Bold" size="32.0" />
+                    </font>
+                </Button>
+                <Button fx:id="Three" mnemonicParsing="false" onAction="#OnActionThree" prefHeight="126.0" prefWidth="52.0" style="-fx-background-color: black;" text="3" textFill="#eb7019">
+                    <font>
+                        <Font name="Agency FB Bold" size="32.0" />
+                    </font>
+                </Button>
+                <Button fx:id="Four" mnemonicParsing="false" onAction="#OnActionFour" prefHeight="110.0" prefWidth="52.0" style="-fx-background-color: black;" text="4" textFill="#eb7019">
+                    <font>
+                        <Font name="Agency FB Bold" size="32.0" />
+                    </font>
+                </Button>
+                <Button fx:id="Five" mnemonicParsing="false" onAction="#OnActionFive" prefHeight="120.0" prefWidth="52.0" style="-fx-background-color: black;" text="5" textFill="#eb7019">
+                    <font>
+                        <Font name="Agency FB Bold" size="32.0" />
+                    </font>
+                </Button>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+        <HBox fx:id="hbSixToNine" alignment="CENTER" layoutX="142.0" layoutY="200.0" prefHeight="100.0" prefWidth="329.0" spacing="25.0">
+            <children>
+                <Button fx:id="Six" mnemonicParsing="false" onAction="#OnActionSix" prefHeight="100.0" prefWidth="52.0" style="-fx-background-color: black;" text="6" textAlignment="CENTER" textFill="#eb7019">
+                    <font>
+                        <Font name="Agency FB Bold" size="32.0" />
+                    </font>
+                </Button>
+                <Button fx:id="Seven" mnemonicParsing="false" onAction="#OnActionSeven" prefHeight="100.0" prefWidth="52.0" style="-fx-background-color: black;" text="7" textAlignment="CENTER" textFill="#eb7019">
+                    <font>
+                        <Font name="Agency FB Bold" size="32.0" />
+                    </font>
+                </Button>
+                <Button fx:id="Eight" mnemonicParsing="false" onAction="#OnActionEight" prefHeight="123.0" prefWidth="52.0" style="-fx-background-color: black;" text="8" textAlignment="CENTER" textFill="#eb7019">
+                    <font>
+                        <Font name="Agency FB Bold" size="32.0" />
+                    </font>
+                </Button>
+                <Button fx:id="Nine" mnemonicParsing="false" onAction="#OnActionNine" prefHeight="124.0" prefWidth="52.0" style="-fx-background-color: black;" text="9" textAlignment="CENTER" textFill="#eb7019">
+                    <font>
+                        <Font name="Agency FB Bold" size="32.0" />
+                    </font>
+                </Button>
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </HBox>
+    </children>
+</VBox>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="VBoxEndScreen" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="333.0" prefWidth="411.0" spacing="15.0" style="-fx-background-color: linear-gradient(to bottom, #3c182f, #e0b374)" xmlns="http://javafx.com/javafx/8.0.141" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject1.EndScreenPageController">
+   <children>
+      <Label alignment="TOP_CENTER" layoutX="231.0" layoutY="27.0" prefHeight="37.0" prefWidth="138.0" text="Nice Try!!" textAlignment="CENTER" textFill="#a89c9c">
+         <font>
+            <Font name="Book Antiqua Bold Italic" size="29.0" />
+         </font>
+         <padding>
+            <Insets top="10.0" />
+         </padding>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="41.0" prefWidth="401.0">
+         <children>
+            <Label text="Score: " textFill="#a89c9c">
+               <font>
+                  <Font name="Book Antiqua Bold" size="19.0" />
+               </font>
+            </Label>
+            <Label fx:id="ScoreAfterEnd" text="0" textFill="#a89c9c">
+               <font>
+                  <Font name="Book Antiqua Bold" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <Label layoutX="133.0" layoutY="126.0" text="Please enter a user name to save the score" textFill="#a89c9c">
+         <font>
+            <Font name="Book Antiqua Bold" size="18.0" />
+         </font>
+      </Label>
+      <HBox alignment="CENTER" prefHeight="58.0" prefWidth="600.0">
+         <children>
+            <Label text="User Name: " textFill="#a89c9c">
+               <font>
+                  <Font name="Book Antiqua Bold" size="19.0" />
+               </font>
+            </Label>
+            <TextField fx:id="Username" prefHeight="25.0" prefWidth="203.0" promptText="Enter user name here" />
+         </children>
+      </HBox>
+      <Button mnemonicParsing="false" onAction="#Submit" prefHeight="34.0" prefWidth="92.0" style="-fx-background-radius: 10;" text="Submit" />
+      <HBox alignment="CENTER" prefHeight="53.0" prefWidth="411.0" spacing="20.0">
+         <children>
+            <Button mnemonicParsing="false" onAction="#ExitApplication" prefHeight="34.0" prefWidth="92.0" style="-fx-background-radius: 10;" text="Exit" />
+            <Button mnemonicParsing="false" onAction="#GoBackHome" prefHeight="34.0" prefWidth="92.0" style="-fx-background-radius: 10;" text="Home" />
+         </children>
+      </HBox>
+   </children>
+</VBox>

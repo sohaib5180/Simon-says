@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="VBoxHighscore" alignment="TOP_CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="635.0" prefWidth="423.0" spacing="20" style="-fx-background-color: linear-gradient(to bottom, #3c182f, #e0b374);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject1.HighScorePageController">
+   <children>
+      <HBox alignment="CENTER">
+         <children>
+            <Label text="HIGH SCORES" textAlignment="CENTER" textFill="WHITE">
+               <font>
+                  <Font name="ISOCTEUR" size="50.0" />
+               </font>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="482.0" prefWidth="423.0">
+         <children>
+            <ListView fx:id="HighscoreList" prefHeight="233.0" prefWidth="381.0" />
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" prefHeight="106.0" prefWidth="423.0">
+         <children>
+            <Button alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#backhome" prefHeight="52.0" prefWidth="170.0" style="-fx-background-color: white;" text="home" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="ISOCTEUR" size="30.0" />
+               </font></Button>
+         </children>
+      </HBox>
+      
+   </children>
+</VBox>

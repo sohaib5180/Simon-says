@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="VBoxStartPage" alignment="CENTER" prefHeight="520.0" prefWidth="660.0" spacing="20.0" style="-fx-background-color: linear-gradient(to bottom, #3c182f, #e0b374);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject1.StartPageController">
+   <children>
+      <Label fx:id="GameNameLabel" alignment="CENTER" contentDisplay="CENTER" prefHeight="52.0" prefWidth="514.0" text="SIMON SAYS" textAlignment="CENTER" textFill="#fcf6f6" wrapText="true">
+         <font>
+            <Font name="ISOCTEUR" size="50.0" />
+         </font>
+      </Label>
+     <HBox />
+     <HBox />
+    
+    <Button fx:id="startbutton" minHeight="50.0" minWidth="125.0" onAction="#HandleOnStartGame" prefHeight="50.0" prefWidth="155.0" style="-fx-background-radius: 5; -fx-background-color: white;" text="START" textAlignment="CENTER" textFill="#e0b374" wrapText="true">
+        <font>
+           <Font name="ISOCTEUR" size="20.0" />
+        </font>
+        <cursor>
+           <Cursor fx:constant="HAND" />
+        </cursor>
+    </Button>
+       
+       <HBox alignment="CENTER" prefHeight="74.0" prefWidth="700.0" spacing="20.0">
+          <children>
+              <Button fx:id="highscorebutton" onAction="#HandleOnHighScore" prefHeight="35.0" prefWidth="125.0" style="-fx-background-radius: 5; -fx-background-color: white;" text="HIGH SCORES" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="ISOCTEUR" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+            <Button fx:id="howtoplaybutton" onAction="#HandleOnHowToPlay" prefHeight="35.0" prefWidth="125.0" style="-fx-background-radius: 5; -fx-background-color: white;" text="HOW TO PLAY" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="ISOCTEUR" size="12.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+          </children>
+       </HBox>
+       
+       
+   </children>
+</VBox>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox fx:id="VBoxSelectMode" alignment="CENTER" prefHeight="520.0" prefWidth="660.0" spacing="20" style="-fx-background-color: linear-gradient(to bottom, #3c182f, #e0b374);" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="finalproject1.SelectModePageController">
+   <children>
+        <Label alignment="CENTER" prefHeight="73.0" prefWidth="624.0" text="Select a Mode" textAlignment="CENTER" textFill="WHITE">
+         <font>
+            <Font name="ISOCTEUR" size="50.0" />
+         </font>
+      </Label>
+       
+       <HBox alignment="CENTER" />
+       
+       <HBox alignment="CENTER">
+          <children>
+              <Button onAction="#shapesmode" prefHeight="45.0" prefWidth="135.0" style="-fx-background-radius: 5; -fx-background-color: white;" text="Shapes" textAlignment="CENTER" textFill="#e0b374" wrapText="true">
+               <font>
+                  <Font name="ISOCTEUR" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+          </children>
+      </HBox>
+       
+       <HBox alignment="CENTER">
+          <children>
+              <Button onAction="#numbersmode" prefHeight="45.0" prefWidth="135.0" style="-fx-background-color: white; -fx-background-radius: 5;" text="Numbers" textFill="#e0b374" wrapText="true">
+               <font>
+                  <Font name="ISOCTEUR" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+          </children>
+       </HBox>
+       
+       <HBox alignment="CENTER">
+          <children>
+              <Button onAction="#coloursmode" prefHeight="45.0" prefWidth="135.0" style="-fx-background-radius: 5; -fx-background-color: white;" text="Colours" textFill="#e0b374" wrapText="true">
+               <font>
+                  <Font name="ISOCTEUR" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+          </children>
+       </HBox>
+       
+       <HBox alignment="CENTER">
+          <children>
+              <Button onAction="#backhome" prefHeight="36.0" prefWidth="98.0" style="-fx-background-radius: 5; -fx-background-color: white;" text="Home">
+               <font>
+                  <Font name="ISOCTEUR" size="20.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Button>
+          </children>
+       </HBox>
+   </children>
+</VBox>
